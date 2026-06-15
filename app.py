@@ -85,7 +85,7 @@ def handle_message(event):
     try:
         # 👈 這裡幫你把 System Prompt 裝進去了！
         response = client.models.generate_content(
-            model='gemini-2.0-flash',
+            model='gemini-2.5-flash',
             contents=user_msg,
             config=types.GenerateContentConfig(
                 system_instruction=SYSTEM_INSTRUCTION,
